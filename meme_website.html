@@ -1,0 +1,83 @@
+<html>
+  <body style="background:lightgoldenrodyellow">
+    <div class="header">
+      <h1>Radical Energy & Materials</h1>
+      <h2 style="color:blue"><i>Innovation That Excites</i></h2>
+    </div>
+    <h1>Screw you Andrew</h1>
+    <p>This is a test of a custom html file by <b>Alex Nellis</b></p>
+    <h2>Completed for <span style="color:darkred"><i>Radical Energy & Materials</i></span> Testing Purposes</h2>
+    <form id="frm1">
+      Number 1: <input type="text" name="num1"><br>
+      Number 2: <input type="text" name="num2"><br><br>
+    </form>
+    
+    <script>
+      var ans;
+      var time = new Date();
+      var timestamp = time.getTime();
+      function sumNum() 
+      {
+        var x = document.getElementById("frm1");
+        var sum = 0;
+        for (i=0;i<x.length;i++) 
+        {
+          sum+=parseFloat(x.elements[i].value);
+        }
+        text = sum.toString();
+        document.getElementById("output").innerHTML = "<span style='background:lightblue'>"+'The Sum is ' + text+"  </span>";
+        return sum;
+      }
+
+      function root() 
+      {
+        var x = document.getElementById("frm1");
+        var sum = sumNum();
+        var root = sum**0.5;
+        var text = root.toFixed(2).toString();
+        document.getElementById("rootout").innerHTML = "<span style='background:lightblue'>"+'The Root of the Sum is ' + text+"  </span>";
+      }
+
+      function digitalroot()
+      {
+        var x = document.getElementById("frm1");
+        var sum = sumNum().toString();
+        var digiroot = 0;
+        for (i=0;i<sum.length;i++)
+        {
+          digiroot+=parseFloat(sum[i])
+        }
+        while (digiroot.toString().length>1)
+        {
+          var placehold = digiroot.toString();
+          digiroot = 0;
+          for (i=0;i<placehold.length;i++)
+          {
+            digiroot+=parseFloat(placehold[i])
+          }
+        }
+        
+        var text = digiroot.toString();
+        document.getElementById("digiout").innerHTML = "<span style='background:lightblue'>"+'The Digital Root of the Sum is ' + text +"</span>";
+      }
+    </script>
+    <input type="submit" value="submit" onclick="sumNum();root();digitalroot()" onmouseover="value='submit me!'" onmouseleave="value='submit'">
+    <p id="output"><br></p>
+    <p id="rootout"><br></p>
+    <p id="digiout"><br></p>
+    <img class="gif" src="bender.gif" alt="Fun on a Bun">
+  </body>
+  <style>
+    .header
+    {
+      color:darkred;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: center;
+    }
+    .gif
+    {
+      margin: 10px auto 20px;
+      display: block;
+    }
+  </style>
+</html
