@@ -27,50 +27,23 @@
         </div>
     </header>
     <body style="background-color:gray">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1>
-            Testing Purposes
-        </h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>
-            Testing 2 Purposes
-        </h2>
-        <h1>
-            Break
-        </h1>
-        <h1>
-            Break
-        </h1>
-        <h1>
-            Break
-        </h1>
-        <h1>
-            Break
-        </h1>
-        <h1>
-            Break
-        </h1>
-        <h1>
-            Break
-        </h1>
-        <h1>
-            Break
-        </h1>
-        <h1>
-            Break
-        </h1>
+        <div class="row">
+            <div class="columnleft">
+                <h1>Test</h1>
+                <h1>Test</h1>
+            </div>
+            <div class="columnmid">
+                <h1>Test</h1>
+                <h1>Test</h1>
+            </div>
+            <div class="columnright">
+                <h1>Test</h1>
+                <h1>Test</h1>
+            </div>
+        </div>
     </body>
 </html>
+
 <style>
 header
 {
@@ -93,5 +66,35 @@ span.title
 .infoContainer
 {
     position:relative;
+}
+.columnright
+{
+    display:inline-block;
+    height:400px;
+    float: right;
+    width: 33%;
+}
+.columnleft
+{
+    display:inline-block;
+    height:400px;
+    float: left;
+    width: 33%;
+}
+.columnmid
+{
+    display:inline-block;
+    width:33%;
+}
+.row
+{
+    content: "";
+    display: table;
+    clear: both;
+    margin-top:240px;
+}
+.body
+{
+    margin-top:240px;
 }
 </style>
