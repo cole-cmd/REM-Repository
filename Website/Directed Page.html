@@ -8,11 +8,11 @@
             <table id="banner" bgcolor="#003399" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <a ref="Website.html">
                     <img onClick="parent.location='Website.html'" style="cursor:pointer" src="Logo.jpg" height="50%" align="left">
-                    <span align="right"><i><b><br>Radical Energy & Materials</b></i></span>
+                    <span class="title" align="right"><i><b><br>Radical Energy & Materials</b></i></span>
                 </a>
             </table>
         </div>
-        <div id="infoContainer" style="background:darkslategray" align="right">
+        <div class="infoContainer" style="background:darkslategray" align="right">
             <table height="15%">
                 <td>
                     <p style="cursor:pointer;position:relative;font-size:25;left:-75px"><b>About Us</b></p>
@@ -26,8 +26,24 @@
             </table>         
         </div>
     </header>
-    <body style="background-color:gray">
-        
+    <body bgcolor="#2596be">
+        <div class="row">
+            <div class="columnleft">
+                
+            </div>
+            <div class="columnmid" align="left">
+                <h1><span>Who We Are</span></h1>
+                <h3>
+                    &emsp;&emsp;Radical Energy & Materials (REM) is a technology and software company operating through the production and <br>
+                    provision of products and services geared towards further commercializing the nuclear industry. REM currently operates in <br>
+                    automatic cataloging and storage of nuclear waste to improve the use of nuclear medicine in hospitals. Our goal is to give <br>
+                    hospitals the opportunity to provide better treatment and help the lives of more people.
+                </h3>
+            </div>
+            <div class="columnright" align="right">
+
+            </div>
+        </div>
     </body>
 </html>
 
@@ -39,8 +55,10 @@ header
     position:fixed;
     top:0;
     width:100%;
+    margin-bottom:0px;
+    z-index:1;
 }
-span
+span.title
 {
     position:relative;
     left: 940px;
@@ -50,8 +68,56 @@ span
     font-size:+35;
     color:#2596be;
 }
-.infoContainer
+div.infoContainer
 {
     position:relative;
+    border:3px solid black;
+    z-index:auto;
+    margin:0px
+}
+.columnright
+{
+    display:inline-block;
+    height:800px;
+    float: right;
+    width:6em;
+}
+.columnleft
+{
+    display:inline-block;
+    height:800px;
+    float:left;
+    width:6em;
+}
+.columnmid
+{
+    display:inline-block;
+    width:81em;
+    border:2px solid black;
+    height:800px;
+    background-color:gray;
+}
+.columnmid h1 span
+{
+    position:relative;
+    right:-60px;
+}
+.columnmid h3
+{
+    position:relative;
+    right:-120px;
+    word-break:break-word;
+    width:calc(100%-40px);
+}
+.row
+{
+    content: "";
+    display: table;
+    clear: both;
+    margin-top:140px;
+}
+.body
+{
+    margin-top:240px;
 }
 </style>

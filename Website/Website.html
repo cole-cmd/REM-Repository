@@ -12,7 +12,7 @@
                 </a>
             </table>
         </div>
-        <div id="infoContainer" style="background:darkslategray" align="right">
+        <div class="infoContainer" style="background:darkslategray" align="right">
             <table height="15%">
                 <td>
                     <p onClick="parent.location='Directed Page.html'" style="cursor:pointer;position:relative;font-size:25;left:-75px"><b>About Us</b></p>
@@ -44,7 +44,7 @@
                 <h1>Test</h1>
                 <h1>Test</h1>
             </div>
-            <div class="columnmid" align="center">
+            <div class="columnmid" align="left">
                 <h1>Test</h1>
                 <h1>Test</h1>
                 <h2>Mittel</h2>
@@ -65,6 +65,8 @@ header
     position:fixed;
     top:0;
     width:100%;
+    box-shadow:10px;
+    z-index:1;
 }
 span.title
 {
@@ -76,9 +78,11 @@ span.title
     font-size:+35;
     color:#2596be;
 }
-.infoContainer
+div.infoContainer
 {
     position:relative;
+    border:3px black solid;
+    z-index:auto;
 }
 .columnright
 {
@@ -98,13 +102,15 @@ span.title
 {
     display:inline-block;
     width:69em;
+    border:2px solid black;
+    height:800px;
 }
 .row
 {
     content: "";
     display: table;
     clear: both;
-    margin-top:240px;
+    margin-top:130px;
 }
 .body
 {
