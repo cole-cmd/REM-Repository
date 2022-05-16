@@ -21,19 +21,34 @@
                     <p onClick="parent.location='Website.html'" style="cursor:pointer;position:relative;font-size:25;left:-50px"><b>Products</b></p>
                 </td>
                 <td>
-                    <p style="cursor:pointer;position:relative;font-size:25;left:-25px"><b>Contact Us</b></p>
+                    <p onClick="parent.location='Contact.html'" style="cursor:pointer;position:relative;font-size:25;left:-25px"><b>Contact Us</b></p>
                 </td>
             </table>         
         </div>
     </header>
-    <body bgcolor="#2596be">
+    <body style="background:silver">
         <div class="row">
             <div class="columnleft">
             </div>
-            <div class="columnmid" align="center">
-                <h1>
-                    Coleman Smith
-                </h1>
+            <div class="columnmid" align="left">
+                <h1>&emsp;General Information</h1>
+                <p>
+                    Address
+                    <br>
+                    Address second Line
+                    <br>
+                    Phone:
+                    <br>
+                    Website:
+                </p>
+                <h2>&emsp;&emsp;CEO</h2>
+                <p>
+                    <a onClick="parent.location='Summary/Smith.html'" style="cursor:pointer;">Coleman Smith</a>
+                    <br>
+                    Phone:
+                    <br>
+                    Email:
+                </p>
             </div>
             <div class="columnright" align="right">
 
@@ -98,6 +113,7 @@ div.infoContainer
     border:2px solid black;
     height:800px;
     background-color:gray;
+    box-shadow: 0 0px 50px rgba(0,0,0,0.5);
 }
 .columnmid h1 span
 {
@@ -110,6 +126,13 @@ div.infoContainer
     right:-120px;
     word-break:break-word;
     width:calc(100%-40px);
+}
+.columnmid p
+{
+    font-size:20px;
+    position:relative;
+    right:-75px;
+    margin-top:0px;
 }
 .row
 {
