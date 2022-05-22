@@ -4,20 +4,20 @@
             Would you like to join our e-mail list?
         </h1>
         <form id="Email Input">
-            <input type="text" name="email"><br>
+            <input type="text" name="eml"><br><br>
+            <input id="Submit" type="submit" value="Submit" onclick="getEmail()" action="emailcollect.php" method="post">
         </form>
-        <h2 id="Submit">
-            <input type="submit" value="Submit" onclick="getEmail()">
-        </h2>
         <script>
             function getEmail()
             {
+                var loc = window.location.pathname;
+                var dir = loc.substring(0, loc.lastIndexOf('/'));
                 var x = document.getElementById("Email Input");
                 var email = x.elements[0].value;
                 document.getElementById("Email Input").innerHTML = "E-mail submitted";
                 document.getElementById("Submit").innerHTML = ' ';
-                alert(email)
             }
         </script>
     </body>
 </html>
+
