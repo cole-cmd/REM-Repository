@@ -4,5 +4,5 @@
     $data = $_POST["eml"]."\r\n";
     fwrite($fp,$data);
     fclose($fp);
-    header("Location:Contact.html")
+    header("Location:emailreturn.html")
 ?>
