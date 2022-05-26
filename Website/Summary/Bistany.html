@@ -1,13 +1,13 @@
 <html>
     <head>
         <title>Radical Energy & Materials</title>
-        <link rel="icon" href="LogoInverted.jpg"/>
+        <link rel="icon" href="../LogoInverted.jpg"/>
     </head>
     <header>
         <div id="top" class="header" style="background:black" border="0">
             <table id="banner" bgcolor="#003399" border="0" cellpadding="0" cellspacing="0" width="100%">
-                <a ref="Website.html">
-                    <img onClick="parent.location='Website.html'" style="cursor:pointer" src="Logo.jpg" height="50%" align="left">
+                <a ref="../Website.html">
+                    <img onClick="parent.location='../Website.html'" style="cursor:pointer" src="../Logo.jpg" height="50%" align="left">
                     <span class="title" align="right"><i><b><br>Radical Energy & Materials</b></i></span>
                 </a>
             </table>
@@ -15,10 +15,10 @@
         <div class="infoContainer" style="background:#2596be" align="right">
             <table height="15%">
                 <td>
-                    <p style="cursor:pointer;position:relative;font-size:25;left:-75px" onClick="parent.location='Directed Page.html'"><b>About Us</b></p>
+                    <p style="cursor:pointer;position:relative;font-size:25;left:-75px" onClick="parent.location='../Directed Page.html'"><b>About Us</b></p>
                 </td>
                 <td>
-                    <p onClick="parent.location='Website.html'" style="cursor:pointer;position:relative;font-size:25;left:-50px"><b>Products</b></p>
+                    <p onClick="parent.location='../Website.html'" style="cursor:pointer;position:relative;font-size:25;left:-50px"><b>Products</b></p>
                 </td>
                 <td>
                     <p onClick="parent.location='Contact.html'" style="cursor:pointer;position:relative;font-size:25;left:-25px"><b>Contact Us</b></p>
@@ -30,49 +30,31 @@
         <div class="row">
             <div class="columnleft">
             </div>
-            <div class="columnmid" align="left">
-                <h1>&emsp;General Information</h1>
-                <p>
-                    Address
-                    <br>
-                    Address second Line
-                    <br>
-                    Phone:
-                    <br>
-                    Website:
-                </p>
-                <h2>&emsp;&emsp;CEO</h2>
-                <p>
-                    <a onClick="parent.location='Summary/Smith.html'" style="cursor:pointer;">Coleman Smith</a>
-                    <br>
-                    Phone:
-                    <br>
-                    Email:
-                </p>
-                <br><br><br>
-                <h2>&emsp;&emsp;Join our E-mail List</h2>
-                <form class="input" id="Email Input" action="emailcollect.php" method="post">
-                    <input class="textbox" type="text" name="eml"><br>
-                    <input id="Submit" type="submit" value="Submit" style="position:relative;top:3px;right:-7px;">
-                </form>
+            <div class="columnmid" align="center">
+                <h1>
+                    Sean Bistany
+                </h1>
+                <img src="bistany.jpg" class="image">
+                <h2 align="left" style="margin:5%;margin-top:1%;">
+                    &emsp;&emsp;Sean is a fourth-year undergraduate student majoring in Nuclear Engineering 
+                    with a minor in Environmental Engineering. He is currently doing research in computational 
+                    fluid dynamics focusing on gap instability between fuel rod bundles. He has been heavily 
+                    involved with the Penn State Nuclear Engineering organizations, serving on the executive 
+                    board of all four organizations. The Penn State American Nuclear Society chapter has elected 
+                    to form a student conference committee to bid for the 2024 ANS student conference with Sean 
+                    serving as the General Chair.
+                </h2>
             </div>
             <div class="columnright" align="right">
-
             </div>
         </div>
     </body>
     <footer>
-        <div>
-
-        </div>
+        <div></div>
     </footer>
 </html>
 
 <style>
-html
-{
-    overflow-x:hidden;
-}
 header
 {
     margin:-10px;
@@ -82,6 +64,14 @@ header
     width:100%;
     margin-bottom:0px;
     z-index:1;
+}
+.image
+{
+    height:400px;
+    width:400px;
+    border:4px solid black;
+    padding:-1px;
+    margin:-3px;
 }
 .Name
 {
@@ -142,13 +132,6 @@ div.infoContainer
     word-break:break-word;
     width:calc(100%-40px);
 }
-.columnmid p
-{
-    font-size:20px;
-    position:relative;
-    right:-75px;
-    margin-top:0px;
-}
 .row
 {
     content: "";
@@ -159,25 +142,6 @@ div.infoContainer
 .body
 {
     margin-top:240px;
-}
-.input
-{
-    position:relative;
-    right:-75px;
-    top:-20px;
-}
-.textbox
-{
-    border: 1px solid;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-	border-radius: 7px;
-	-moz-box-shadow: 2px 2px 3px #666;
-	-webkit-box-shadow: 2px 2px 3px #666;
-	box-shadow: 2px 2px 3px #666;
-	padding: 4px 7px;
-	outline: 0;
-	-webkit-appearance: none;
 }
 footer
 {
@@ -193,6 +157,5 @@ footer div
     background:#2596be;
     height:15px;
     border:3px solid black;
-    overflow-x:hidden;
 }
 </style>
