@@ -5,20 +5,17 @@
     </head>
     <header>
         <div id="top" class="header" style="background:black" border="0">
-            <table id="banner" bgcolor="#003399" border="0" cellpadding="0" cellspacing="0" width="100%">
-                <a ref="Website.html">
-                    <img onClick="parent.location='Website.html'" style="cursor:pointer" src="Logo.jpg" height="50%" align="left">
-                    <span class="title" align="right"><i><b><br>Radical Energy & Materials</b></i></span>
-                </a>
-            </table>
+            <img onClick="parent.location='Website.html'" style="cursor:pointer" src="Logo.jpg" height="95%" align="left">
+            <span class="title"><p><i><b>Radical Energy & Materials&emsp;</b></i></p></span>
         </div>
-        <div class="infoContainer" style="background:#2596be" align="right" width="101%">
+        <div style="clear:both;"></div>
+        <div class="infoContainer" style="background:#2596be" align="right">
             <table height="15%">
                 <td>
                     <p onClick="parent.location='Directed Page.html'" style="cursor:pointer;position:relative;font-size:25;left:-75px"><b>About Us</b></p>
                 </td>
                 <td>
-                    <p style="cursor:pointer;position:relative;font-size:25;left:-50px"><b>Products</b></p>
+                    <p onClick="parent.location='Website.html'" style="cursor:pointer;position:relative;font-size:25;left:-50px"><b>Products</b></p>
                 </td>
                 <td>
                     <p onClick="parent.location='Contact.html'" style="cursor:pointer;position:relative;font-size:25;left:-25px"><b>Contact Us</b></p>
@@ -54,51 +51,31 @@ html
 header
 {
     margin:-10px;
-    height:240px;
+    height:130px;
     position:fixed;
     top:0;
     width:100%;
-    box-shadow:10px;
+    margin-bottom:0px;
     z-index:1;
+    background-color: black;
 }
-span.title
+span.title p
 {
-    position:relative;
-    left: 940px;
+    float:right;
     display:inline-block;
-    width:12em;
-    top:10px;
+    text-align:right;
+    margin-top:2.75%;
+    right:-70%;
     font-size:+35;
     color:#2596be;
 }
 div.infoContainer
 {
     position:relative;
-    border:3px black solid;
-    z-index:auto;
-}
-.columnright
-{
-    display:inline-block;
-    height:400px;
-    float: right;
-    width:6em;
-}
-.columnleft
-{
-    display:inline-block;
-    height:400px;
-    float: left;
-    width:6em;
-}
-.columnmid
-{
-    display:inline-block;
-    width:81em;
-    border:2px solid black;
-    height:800px;
-    background:gray;
-    box-shadow: 0 0px 50px rgba(0,0,0,0.5);
+    border:3px solid black;
+    z-index:0;
+    margin:0px;
+    top:-10%;
 }
 .row
 {
@@ -106,6 +83,30 @@ div.infoContainer
     display: table;
     clear: both;
     margin-top:130px;
+    width:100%;
+}
+.columnleft
+{
+    display:inline-block;
+    height:400px;
+    float: left;
+    width:2.5%;
+}
+.columnmid
+{
+    display:inline-block;
+    width:94%;
+    border:2px solid black;
+    height:800px;
+    background:gray;
+    box-shadow: 0 0px 50px rgba(0,0,0,0.5);
+}
+.columnright
+{
+    display:inline-block;
+    height:400px;
+    float: right;
+    width:2.5%;
 }
 .body
 {

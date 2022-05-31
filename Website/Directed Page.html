@@ -5,23 +5,20 @@
     </head>
     <header>
         <div id="top" class="header" style="background:black" border="0">
-            <table id="banner" bgcolor="#003399" border="0" cellpadding="0" cellspacing="0" width="100%">
-                <a ref="Website.html">
-                    <img onClick="parent.location='Website.html'" style="cursor:pointer" src="Logo.jpg" height="50%" align="left">
-                    <span class="title" align="right"><i><b><br>Radical Energy & Materials</b></i></span>
-                </a>
-            </table>
+            <img onClick="parent.location='Website.html'" style="cursor:pointer" src="Logo.jpg" height="95%" align="left">
+            <span class="title"><p><i><b>Radical Energy & Materials&emsp;</b></i></p></span>
         </div>
+        <div style="clear:both;"></div>
         <div class="infoContainer" style="background:#2596be" align="right">
             <table height="15%">
                 <td>
-                    <p style="cursor:pointer;position:relative;font-size:25;left:-75px"><b>About Us</b></p>
+                    <p onClick="parent.location='Directed Page.html'" style="cursor:pointer;position:relative;font-size:25;"><b>About Us&emsp;</b></p>
                 </td>
                 <td>
-                    <p onClick="parent.location='Website.html'" style="cursor:pointer;position:relative;font-size:25;left:-50px"><b>Products</b></p>
+                    <p onClick="parent.location='Website.html'" style="cursor:pointer;position:relative;font-size:25;"><b>Products&emsp;</b></p>
                 </td>
                 <td>
-                    <p onClick="parent.location='Contact.html'" style="cursor:pointer;position:relative;font-size:25;left:-25px"><b>Contact Us</b></p>
+                    <p onClick="parent.location='Contact.html'" style="cursor:pointer;position:relative;font-size:25;"><b>Contact Us&emsp;</b></p>
                 </td>
             </table>         
         </div>
@@ -33,12 +30,12 @@
             </div>
             <div class="columnmid" align="left">
                 <h1><span>Who We Are</span></h1>
-                <h3>
-                    &emsp;&emsp;Radical Energy & Materials (REM) is a technology and software company operating through the production and <br>
-                    provision of products and services geared towards further commercializing the nuclear industry. REM currently operates in <br>
-                    automatic cataloging and storage of nuclear waste to improve the use of nuclear medicine in hospitals. Our goal is to give <br>
+                <h2>
+                    &emsp;&emsp;Radical Energy & Materials (REM) is a technology and software company operating through the production and
+                    provision of products and services geared towards further commercializing the nuclear industry. REM currently operates in
+                    automatic cataloging and storage of nuclear waste to improve the use of nuclear medicine in hospitals. Our goal is to give
                     hospitals the opportunity to provide better treatment and help the lives of more people.
-                </h3>
+                </h2>
                 <br>
                 <table class="Name" align="center">
                     <tr>
@@ -49,6 +46,7 @@
                             </div>
                         </td>
                         <td align="center">
+                            <img class="image" src="Summary/smith.jpg">
                             <div onClick="parent.location='Summary/Smith.html'" style="cursor:pointer">
                                 Coleman Smith<br>
                                 Chief Executive Officer
@@ -98,6 +96,7 @@
                         </td>
                         <td align="Center">
                             <br>
+                            <img class="image" src="Summary/aldeia.jpg">
                             <div  onClick="parent.location='Summary/Aldeia.html'" style="cursor:pointer">
                                 Luiz Aldeia<br>
                                 Chief Design Engineer
@@ -108,7 +107,7 @@
                             <img class="image" src="Summary/nellis.jfif">
                             <div  onClick="parent.location='Summary/Nellis.html'" style="cursor:pointer">
                                 Alex Nellis<br>
-                                Radiochemistry Specialist
+                                Chief Programmer
                             </div>
                         </td>
                     </tr>
@@ -134,12 +133,13 @@ html
 header
 {
     margin:-10px;
-    height:240px;
+    height:130px;
     position:fixed;
     top:0;
     width:100%;
     margin-bottom:0px;
     z-index:1;
+    background-color: black;
 }
 .Name
 {
@@ -148,13 +148,13 @@ header
     width:85%;
     font-weight:bold;
 }
-span.title
+span.title p
 {
-    position:relative;
-    left: 940px;
+    float:right;
     display:inline-block;
-    width:12em;
-    top:10px;
+    text-align:right;
+    margin-top:2.75%;
+    right:-70%;
     font-size:+35;
     color:#2596be;
 }
@@ -163,50 +163,51 @@ div.infoContainer
     position:relative;
     border:3px solid black;
     z-index:0;
-    margin:0px
-}
-.columnright
-{
-    display:inline-block;
-    height:850px;
-    float: right;
-    width:6em;
-}
-.columnleft
-{
-    display:inline-block;
-    height:850px;
-    float:left;
-    width:6em;
-}
-.columnmid
-{
-    display:inline-block;
-    width:81em;
-    border:2px solid black;
-    height:1025px;
-    background-color:white;
-    box-shadow: 0 0px 50px rgba(0,0,0,0.5);
-    overflow-x:hidden;
-}
-.columnmid h1 span
-{
-    position:relative;
-    right:-60px;
-}
-.columnmid h3
-{
-    position:relative;
-    right:-120px;
-    word-break:break-word;
-    width:calc(100%-40px);
+    margin:0px;
+    top:-10%;
 }
 .row
 {
     content: "";
     display: table;
     clear: both;
-    margin-top:140px;
+    margin-top:130px;
+    width:100%;
+}
+.columnleft
+{
+    display:inline-block;
+    height:600px;
+    float: left;
+    width:2.5%;
+}
+.columnmid
+{
+    display:inline-block;
+    width:94%;
+    border:2px solid black;
+    height:100%;
+    background:white;
+    box-shadow: 0 0px 50px rgba(0,0,0,0.5);
+}
+.columnright
+{
+    display:inline-block;
+    height:600px;
+    float: right;
+    width:2.5%;
+}
+.columnmid h1 span
+{
+    position:relative;
+    right:-60px;
+}
+.columnmid h2
+{
+    position:relative;
+    word-break:break-word;
+    margin-left:10%;
+    margin-right:10%;
 }
 .body
 {
